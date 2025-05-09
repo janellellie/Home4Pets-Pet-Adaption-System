@@ -25,7 +25,7 @@ if start.lower() == "y":
         print("\nOptions: ")
         print("1. View Available Pets")
         print("2. Adopt Pet")
-        print("3. View Adopters List")
+        print("3. View Adopted Pets")
         print("4. Exit")
 
         choice = input("Your Choice (1/2/3/4): ")
@@ -76,7 +76,7 @@ if start.lower() == "y":
 
         elif choice == "3":
             if adopters:
-                print("\nList of Adopters:")
+                print("\nList of Adopted Pets:")
                 for adopter_name, details in adopters.items():
                     pet = details['adopted_pet']
                     print(f"\nAdopter: {adopter_name}")
